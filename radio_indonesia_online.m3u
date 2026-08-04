@@ -1,4 +1,22 @@
 #EXTM3U
+#EXTINF:-1, iSwara Banjarmasin
+https://stream.radiojar.com/qfqd2aw80k8uv?isw_live=1785805483317
+#EXTINF:-1, iSwara Bandung
+https://stream.radiojar.com/u6ppe6hswk8uv?isw_live=1785805667659
+#EXTINF:-1, iSwara Jogjakarta
+https://stream.radiojar.com/hnf2cbv80k8uv?isw_live=1785805709608
+#EXTINF:-1, iSwara Medan
+https://stream.radiojar.com/hkuevehswk8uv?isw_live=1785805736368
+#EXTINF:-1, iSwara Makassar
+https://stream.radiojar.com/seqmzfeu5k8uv?isw_live=1785805760785
+#EXTINF:-1, iSwara Semarang
+https://stream.radiojar.com/fr9zqhv80k8uv?isw_live=1785805786520
+#EXTINF:-1, iSwara Surabaya
+https://stream.radiojar.com/yg8ne2v80k8uv?isw_live=1785805822400
+#EXTINF:-1, iSwara Palembang
+https://stream.radiojar.com/qv4muvhswk8uv?isw_live=1785805871016
+#EXTINF:-1, iSwara Jakarta
+https://stream.radiojar.com/4ywdgup3bnzuv?isw_live=1785805913319
 #EXTINF:-1, 101.8 Radio Tsania FM
 https://a10.siar.us/listen/tsaniafm/radio.mp3
 #EXTINF:-1, 102.7 MTB FM Surabaya
@@ -955,3 +973,4 @@ https://svara-stream.radioddns.net/jakarta_z999fm_aac
 https://a.alhastream.com/listen/station_54/radio
 #EXTINF:-1, ZORA
 https://s1.gntr.net/listen/zora_radio/zora
+
