@@ -1,0 +1,67 @@
+name: Check Radio Online
+
+on:
+  schedule:
+    # Setiap 1 jam
+    - cron: "0 * * * *"
+
+  # Bisa dijalankan manual dari GitHub Actions
+  workflow_dispatch:
+
+  # Jalankan juga ketika script berubah
+  push:
+    paths:
+      - "check_radio.py"
+      - "radio_indonesia.m3u"
+      - ".github/workflows/check-radio.yml"
+
+permissions:
+  contents: write
+
+jobs:
+
+  check-radio:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Check radio streams
+        run: |
+          python check_radio.py
+
+      - name: Commit playlist jika berubah
+        run: |
+
+          git config user.name "github-actions[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add radio_indonesia_online.m3u
+
+          if git diff --cached --quiet; then
+
+            echo "Tidak ada perubahan playlist."
+
+          else
+
+            git commit \
+              -m "Auto update radio online playlist"
+
+            git push
+
+          fi
