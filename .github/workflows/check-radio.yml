@@ -3,7 +3,7 @@ name: Check Radio Online
 on:
   schedule:
     # Setiap 24 jam
-    - cron: "0 0 * * *"
+    - cron: '0 18 * * *'
 
   # Bisa dijalankan manual dari GitHub Actions
   workflow_dispatch:
