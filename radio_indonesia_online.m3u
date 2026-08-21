@@ -143,8 +143,6 @@ http://elkoga.channel-11.net/elkoga
 https://streaming.elshandafm.com/live
 #EXTINF:-1, Elshifa Radio Subang
 https://icecast.elshifaradio.com/stream.mp3
-#EXTINF:-1, Elthree Radio
-https://eu1.fastcast4u.com/proxy/elthree?mp=/1
 #EXTINF:-1, Endless For Beacon FM
 https://stream.zenolive.com/x1wrh2y4jj6uv
 #EXTINF:-1, Endless For Beacon Throwback
@@ -720,9 +718,9 @@ https://stream.pamula.xyz/listen/rtc_ui/radio.mp3
 #EXTINF:-1, Saburai FM
 https://azura2.primastream.com/listen/saburaifm/radio.mp3
 #EXTINF:-1, San Andreas FM
-https://stream.zeno.fm/h5aenxdy3f1uv
-#EXTINF:-1, San Andreas FM
 https://stream.zeno.fm/fyqkn7lvxflvv
+#EXTINF:-1, San Andreas FM
+https://stream.zeno.fm/h5aenxdy3f1uv
 #EXTINF:-1, Sasando FM
 https://i.klikhost.com/8108/;
 #EXTINF:-1, SB FM Parepare
@@ -737,6 +735,8 @@ https://sejahterafm.id/radio/stream
 https://stream.zeno.fm/lvmtsgtbxz0vv
 #EXTINF:-1, Serasan Radio 100.8 FM
 https://i.klikhost.com/8114/stream
+#EXTINF:-1, Seven Radio
+https://stream.zeno.fm/nv041ckkfg0uv
 #EXTINF:-1, She Radio
 https://c4.siar.us/proxy/sheradio/stream
 #EXTINF:-1, Siaran Ichtus
