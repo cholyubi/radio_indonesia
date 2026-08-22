@@ -1,5 +1,6 @@
 import requests
 import time
+import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ==========================================
@@ -75,12 +76,94 @@ def parse_playlist(lines):
 
 
 # ==========================================
+# AMBIL NAMA RADIO
+# ==========================================
+
+def get_radio_name(extinf):
+
+    return extinf.split(",", 1)[-1].strip()
+
+
+# ==========================================
+# NORMALISASI NAMA RADIO
+# ==========================================
+
+def normalize_name(name):
+
+    name = name.lower().strip()
+
+    # Hilangkan karakter yang tidak penting
+    name = re.sub(r"[^a-z0-9]+", " ", name)
+
+    # Hilangkan spasi berlebih
+    name = re.sub(r"\s+", " ", name)
+
+    return name.strip()
+
+
+# ==========================================
+# KELOMPOKKAN STASIUN
+# ==========================================
+
+def group_stations(radios):
+
+    stations = {}
+
+    for extinf, url in radios:
+
+        name = get_radio_name(extinf)
+
+        station_key = normalize_name(name)
+
+        if station_key not in stations:
+
+            stations[station_key] = {
+                "name": name,
+                "entries": []
+            }
+
+        stations[station_key]["entries"].append(
+            {
+                "extinf": extinf,
+                "url": url
+            }
+        )
+
+    return stations
+
+
+# ==========================================
+# HAPUS URL DUPLIKAT
+# ==========================================
+
+def remove_duplicate_urls(stations):
+
+    for station in stations.values():
+
+        seen_urls = set()
+        unique_entries = []
+
+        for entry in station["entries"]:
+
+            url = entry["url"].strip().rstrip("/")
+
+            if url in seen_urls:
+                continue
+
+            seen_urls.add(url)
+
+            unique_entries.append(entry)
+
+        station["entries"] = unique_entries
+
+
+# ==========================================
 # CEK STREAM
 # ==========================================
 
 def check_stream(extinf, url):
 
-    name = extinf.split(",", 1)[-1].strip()
+    name = get_radio_name(extinf)
 
     for attempt in range(RETRY_COUNT):
 
@@ -108,8 +191,7 @@ def check_stream(extinf, url):
                 r.close()
                 continue
 
-            # Ambil sedikit data untuk memastikan
-            # server benar-benar mengirim stream
+            # Ambil sedikit data
             chunk = next(
                 r.iter_content(1024),
                 None
@@ -145,6 +227,10 @@ def check_stream(extinf, url):
 
 def main():
 
+    # ======================================
+    # DOWNLOAD PLAYLIST
+    # ======================================
+
     try:
 
         lines = download_playlist()
@@ -156,72 +242,234 @@ def main():
 
         return
 
+
+    # ======================================
+    # PARSE
+    # ======================================
+
     radios = parse_playlist(lines)
 
-    total = len(radios)
+    total_entries = len(radios)
 
     print()
-    print(f"Total radio ditemukan : {total}")
-    print(f"Thread                : {MAX_THREADS}")
+    print(f"Total entry playlist : {total_entries}")
+
+
+    # ======================================
+    # KELOMPOKKAN STASIUN
+    # ======================================
+
+    stations = group_stations(radios)
+
+    total_stations = len(stations)
+
+    # Hilangkan URL yang sama
+    remove_duplicate_urls(stations)
+
+    print(
+        f"Stasiun unik         : {total_stations}"
+    )
+
+    print(
+        f"Thread               : {MAX_THREADS}"
+    )
+
     print()
 
-    online_radios = []
 
-    online_count = 0
-    offline_count = 0
+    # ======================================
+    # SIAPKAN SEMUA URL UNTUK DICEK
+    # ======================================
+
+    jobs = []
+
+    for station_key, station in stations.items():
+
+        for entry in station["entries"]:
+
+            jobs.append(
+                (
+                    station_key,
+                    entry["extinf"],
+                    entry["url"]
+                )
+            )
+
+
+    total_urls = len(jobs)
+
+    print(
+        f"Total URL yang dicek : {total_urls}"
+    )
+
+    print()
+
+
+    # ======================================
+    # CEK SEMUA STREAM
+    # ======================================
+
+    results = []
+
     checked = 0
 
     with ThreadPoolExecutor(
         max_workers=MAX_THREADS
     ) as executor:
 
-        futures = [
-            executor.submit(
+        futures = {}
+
+        for station_key, extinf, url in jobs:
+
+            future = executor.submit(
                 check_stream,
                 extinf,
                 url
             )
-            for extinf, url in radios
-        ]
+
+            futures[future] = station_key
+
 
         for future in as_completed(futures):
 
+            station_key = futures[future]
+
             result = future.result()
+
+            result["station_key"] = station_key
+
+            results.append(result)
 
             checked += 1
 
+
             if result["online"]:
 
-                online_count += 1
-                online_radios.append(result)
-
                 print(
-                    f"[{checked}/{total}] "
-                    f"+ ONLINE "
+                    f"[{checked}/{total_urls}] "
+                    f"+ ONLINE  "
                     f"{result['name']} "
                     f"({result['latency']} ms)"
                 )
 
             else:
 
-                offline_count += 1
-
                 print(
-                    f"[{checked}/{total}] "
+                    f"[{checked}/{total_urls}] "
                     f"x OFFLINE "
                     f"{result['name']}"
                 )
 
+
     # ======================================
-    # SORTIR BERDASARKAN NAMA
+    # KELOMPOKKAN HASIL BERDASARKAN STASIUN
     # ======================================
 
-    online_radios.sort(
+    station_results = {}
+
+    for result in results:
+
+        key = result["station_key"]
+
+        if key not in station_results:
+
+            station_results[key] = []
+
+        station_results[key].append(result)
+
+
+    # ======================================
+    # PILIH URL TERBAIK
+    # ======================================
+
+    selected_radios = []
+
+    offline_stations = 0
+
+    duplicate_stations = 0
+
+    for station_key, station in station_results.items():
+
+        online = [
+            x
+            for x in station
+            if x["online"]
+        ]
+
+
+        # ----------------------------------
+        # SEMUA URL OFFLINE
+        # ----------------------------------
+
+        if not online:
+
+            offline_stations += 1
+
+            continue
+
+
+        # ----------------------------------
+        # ADA LEBIH DARI SATU URL
+        # ----------------------------------
+
+        if len(station) > 1:
+
+            duplicate_stations += 1
+
+            print()
+            print(
+                f"[STASIUN] {online[0]['name']}"
+            )
+
+            for item in station:
+
+                if item["online"]:
+
+                    print(
+                        f"  ONLINE  "
+                        f"{item['url']} "
+                        f"({item['latency']} ms)"
+                    )
+
+                else:
+
+                    print(
+                        f"  OFFLINE "
+                        f"{item['url']}"
+                    )
+
+
+        # ----------------------------------
+        # PILIH LATENCY TERENDAH
+        # ----------------------------------
+
+        best = min(
+            online,
+            key=lambda x: x["latency"]
+        )
+
+        selected_radios.append(best)
+
+        if len(station) > 1:
+
+            print(
+                f"  -> DIPILIH "
+                f"{best['url']} "
+                f"({best['latency']} ms)"
+            )
+
+
+    # ======================================
+    # SORTIR NAMA RADIO
+    # ======================================
+
+    selected_radios.sort(
         key=lambda x: x["name"].lower()
     )
 
+
     # ======================================
-    # TULIS PLAYLIST HASIL
+    # TULIS PLAYLIST
     # ======================================
 
     with open(
@@ -232,7 +480,7 @@ def main():
 
         f.write("#EXTM3U\n")
 
-        for radio in online_radios:
+        for radio in selected_radios:
 
             f.write(
                 radio["extinf"] + "\n"
@@ -241,6 +489,20 @@ def main():
             f.write(
                 radio["url"] + "\n"
             )
+
+
+    # ======================================
+    # HITUNG STATISTIK
+    # ======================================
+
+    online_stations = len(selected_radios)
+
+    offline_count = total_urls - sum(
+        1
+        for result in results
+        if result["online"]
+    )
+
 
     # ======================================
     # LAPORAN
@@ -251,13 +513,44 @@ def main():
     print("LAPORAN HASIL")
     print("=" * 60)
 
-    print(f"Total Dicek     : {total}")
-    print(f"Total Online    : {online_count}")
-    print(f"Total Offline   : {offline_count}")
-    print(f"Playlist        : {FILE_OUTPUT}")
+    print(
+        f"Total entry awal     : {total_entries}"
+    )
+
+    print(
+        f"Stasiun unik         : {total_stations}"
+    )
+
+    print(
+        f"Total URL dicek      : {total_urls}"
+    )
+
+    print(
+        f"Stasiun punya >1 URL : {duplicate_stations}"
+    )
+
+    print(
+        f"Stasiun offline      : {offline_stations}"
+    )
+
+    print(
+        f"Stasiun online       : {online_stations}"
+    )
+
+    print(
+        f"URL offline          : {offline_count}"
+    )
+
+    print(
+        f"Playlist             : {FILE_OUTPUT}"
+    )
 
     print("=" * 60)
 
+
+# ==========================================
+# RUN
+# ==========================================
 
 if __name__ == "__main__":
     main()
