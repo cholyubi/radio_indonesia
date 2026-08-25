@@ -21,8 +21,6 @@ https://stream.rcast.net/70697
 https://stream.rhemaradio.com/;
 #EXTINF:-1,89.5 JIZ FM
 https://jizfm-streaming.gntr.net/listen/jizfm/jizfm
-#EXTINF:-1,91.8 FBI Radio Bali
-https://c1.siar.us:9180/fbibaliradio
 #EXTINF:-1,94.5 Radio AgapeFM
 http://radio.agapefm.com:8000/agapelive
 #EXTINF:-1,96.3 Medan FM
@@ -69,6 +67,8 @@ https://b.alhastream.com:5035/radio
 http://209.97.165.140:8000/amber1
 #EXTINF:-1,Amber HD2
 http://209.97.165.140:8000/amber2
+#EXTINF:-1,Ameks FM Ambon
+https://audiostreamserver.indonesiastreaming.com/ameksfm
 #EXTINF:-1, Ananda Radio
 https://sx.alhastream.com/radio/8220/radio
 #EXTINF:-1,Ananda radio bandung
@@ -113,10 +113,6 @@ https://jakartastream.axr.online/
 https://stream.rcs.revma.com/9yp8b9pd6k3vv
 #EXTINF:-1, Bagaskara FM
 https://stream.zeno.fm/xsiam0etvftvv
-#EXTINF:-1, Bahtera Yudha 96.4 FM
-https://azuracast.suzananet.com/listen/bahtera_yudha_fm/radio
-#EXTINF:-1,Bahtera Yudha FM
-https://azuracast.suzananet.com/listen/bahtera_yudha_fm/radio
 #EXTINF:-1,Baiturrahman FM
 https://stream.radioalikhwan.com/listen/baiturrahman_fm_aceh/stream
 #EXTINF:-1, Bali Extreme Radio
@@ -223,12 +219,14 @@ https://mettaswara.com:8700/cradio
 https://radio.promediateknologi.id/cakrakrisna.ogg
 #EXTINF:-1,Camajaya FM
 https://ssg.streamingmurah.com:8078/;
-#EXTINF:-1, Caruban FM
-http://stream.pasopatiradio.com/carubanfm
+#EXTINF:-1, Campursari FM
+https://streaming.campursarifm.com/listen/campursari/campursari892
 #EXTINF:-1, Cassta Media
 https://a5.siar.us/listen/casstamedia/stream
 #EXTINF:-1, CDBS Radio Action
 https://a1.siar.us/listen/radiocdbs/stream
+#EXTINF:-1,Cilegon Pass FM
+https://eradio.web.id/passfm
 #EXTINF:-1, Circle Radio
 https://stream.zeno.fm/4965b1aw868uv
 #EXTINF:-1,Citra Buana FM
@@ -257,12 +255,8 @@ http://scg.streamingmurah.com:8074/stream
 https://stream.crownmediacenter.my.id/listen/cmcradio/station2.aac
 #EXTINF:-1,D Radio 104.3 FM Jambi
 https://i.klikhost.com/8132/;
-#EXTINF:-1,D Radio Hits
-https://b.alhastream.com:5027/radio
 #EXTINF:-1, Dairi FM Cirebon
 https://svara-stream.radioddns.net/cirebon_dairifm1
-#EXTINF:-1,Dakta Radio
-http://175.103.48.4:9302/;
 #EXTINF:-1,Damu FM - Radio Dakwatul Musthofa
 https://stream.radiodakwahmustofa.com:8724/damu
 #EXTINF:-1,Davoice Radio
@@ -301,8 +295,6 @@ https://a3.siar.us:8010/stream
 https://sc.habeproradionetindonesia.id:8012/discovery
 #EXTINF:-1,Distorsi Jiwa Radio
 https://a6.siar.us/listen/djr/stream
-#EXTINF:-1,Diva Radio
-https://a3.alhastream.com:1285/divaradio
 #EXTINF:-1, DJ Baru
 https://stream.zeno.fm/iwcyhq56nwiuv
 #EXTINF:-1, DJ FM Surabaya
@@ -335,8 +327,6 @@ https://asv.alhastream.com:1265/rdafm
 https://a4.siar.us/radio/8310/radio.mp3
 #EXTINF:-1, Dutanusantara FM
 https://a4.siar.us/radio/8310/radio.mp3
-#EXTINF:-1, EBS 105.9 FM
-https://azuracast.suzananet.com/listen/ebs_fm/radio
 #EXTINF:-1,El John FM
 http://103.28.149.117:8032/stream
 #EXTINF:-1,El John FM Pangkalpinang
@@ -353,6 +343,8 @@ http://c4.siar.us:8123/live
 https://b.alhastream.com:5140/radio
 #EXTINF:-1, Elkoga Radio
 http://elkoga.channel-11.net/elkoga
+#EXTINF:-1, Elshanda FM Indramayu
+https://streaming.elshandafm.com/live
 #EXTINF:-1, Elshifa Radio Subang
 https://icecast.elshifaradio.com/stream.mp3
 #EXTINF:-1, Endless For Beacon FM
@@ -383,6 +375,8 @@ https://stream-ssl.arenastreaming.com:8002/fit_semarang
 https://i.klikhost.com/8236/stream
 #EXTINF:-1,Flamboyan FM BKL
 https://sc.habeproradionetindonesia.id:8012/flamboyan
+#EXTINF:-1,Fm Com Radio
+http://45.64.97.82:8176/;
 #EXTINF:-1,Fortuna FM Sukabumi
 https://svara-stream.radioddns.net/sukabumi_fortunafm
 #EXTINF:-1, Fourtyfive Radio
@@ -391,8 +385,6 @@ https://a5.siar.us/listen/fourtyfiveradio/stream
 https://rocafmadrid.radioca.st/stream
 #EXTINF:-1, Fresh Radio Lombok
 https://relay.gemini101fm.com/listen/fresh_radio/radio.mp3
-#EXTINF:-1,Gajahmada FM
-https://server.radioimeldafm.co.id/listen/gajahmadafm/gajahmadafm
 #EXTINF:-1, Galaksi FM
 https://stream.pasopatiradio.com/galaksifm
 #EXTINF:-1,GBS FM
@@ -401,6 +393,8 @@ https://s7.alhastream.com/radio/8090/radio
 http://s7.alhastream.com/radio/8090/radio
 #EXTINF:-1,GCD FM Yogyakarta
 https://studio1.indostreamers.com:8014/stream/
+#EXTINF:-1,Ge FM Gabriel Madiun
+https://audiostreamserver.indonesiastreaming.com/gefm
 #EXTINF:-1,Gema Surya FM
 https://r5.siar.us:9420/mp3.mp3
 #EXTINF:-1,Gen 98.7 FM
@@ -415,6 +409,8 @@ https://s1.gntr.net/listen/gentara_wayangan/radio
 https://stream.zeno.fm/09j8xxhdoqetv
 #EXTINF:-1,Geronimo FM
 https://ig.idstreamer.com:8090//live
+#EXTINF:-1,Gibel FM
+https://pu.klikhost.com/proxy/radiogib/stream
 #EXTINF:-1, Giss Radio
 https://pu.klikhost.com/proxy/gissfm/stream
 #EXTINF:-1,Gita Net Radio
@@ -457,14 +453,10 @@ http://185.47.62.52:8000/stream/1/
 http://n04.radiojar.com/9k28wsbu5k8uv?rj-tok=AAABnnI3cWcAobOtA4uCSuet6w&rj-ttl=5
 #EXTINF:-1, Hard Rock Fm Bandung
 https://n08.radiojar.com/7csmg90fuqruv.mp3?1673348819=&rj-tok=AAABhZtmUCUAwkYyBBgriH-X9g&rj-ttl=5
-#EXTINF:-1,Harmoni FM
-https://stream.heartline.co.id:8443/harmoni_takalar
 #EXTINF:-1, Harmoni Indonesia
 https://stream.zeno.fm/v31fgewws4zuv
 #EXTINF:-1,Harmoni Online Radio
 https://ssg.streamingmurah.com:8358/stream
-#EXTINF:-1, Harmony FM Serang
-https://c1.siar.us/radio/8270/stream
 #EXTINF:-1, Hidayah FM
 https://radioislamindonesia.com/radiohidayah.mp3
 #EXTINF:-1,Hijrah FM 102.3
@@ -513,6 +505,8 @@ https://stream-sg1.galuhmedia.co.id/listen/insaniagorontalo/979gorontalo
 https://stream-sg1.galuhmedia.co.id/listen/insaniamataram/876mataram
 #EXTINF:-1,Insania FM Palu
 https://stream-sg1.galuhmedia.co.id/listen/insaniapalu/1034palu
+#EXTINF:-1,Insania FM Sorong
+https://stream-sg1.galuhmedia.co.id/listen/insaniasorong/887sorong
 #EXTINF:-1,Insania FM Ternate
 https://stream-sg1.galuhmedia.co.id/listen/insaniaternate/876ternate
 #EXTINF:-1,Inspiradio
@@ -537,12 +531,16 @@ https://stream.radiojar.com/4ywdgup3bnzuv
 https://stream.radiojar.com/qfqd2aw80k8uv
 #EXTINF:-1,iSwara FM Jakarta
 https://stream.radiojar.com/4ywdgup3bnzuv
+#EXTINF:-1,iSWARA FM Jogja
+https://stream.radiojar.com/hnf2cbv80k8uv
 #EXTINF:-1,iSwara FM Makassar
 https://stream.radiojar.com/seqmzfeu5k8uv
 #EXTINF:-1,iSwara FM Medan
 https://stream.radiojar.com/hkuevehswk8uv
 #EXTINF:-1, iSwara Jakarta
 https://stream.radiojar.com/4ywdgup3bnzuv?isw_live=1785805913319
+#EXTINF:-1, iSwara Jogjakarta
+https://stream.radiojar.com/hnf2cbv80k8uv?isw_live=1785805709608
 #EXTINF:-1, iSwara Makassar
 https://stream.radiojar.com/seqmzfeu5k8uv?isw_live=1785805760785
 #EXTINF:-1, iSwara Medan
@@ -711,14 +709,14 @@ https://stream01-ssl.arenastreaming.com:8043/stream
 https://s3.alhastream.com:8440/masfm
 #EXTINF:-1, Mataram Radio City
 https://a12.siar.us/listen/mataramraydionet/stream
+#EXTINF:-1,Mayangkara FM
+https://streaming.radiopatria.net/listen/mayangkara_101_fm/mayangkara
 #EXTINF:-1,MBL FM
 https://stream.zeno.fm/x0ru3z0jxikvv
 #EXTINF:-1, MBL FM Bandung
 https://stream.zeno.fm/x0ru3z0jxikvv
 #EXTINF:-1,MBS 92.7 FM
 http://51.79.167.17:7000/airtime_128
-#EXTINF:-1,Media FM
-http://streaming.radiomediafm.com:8400/radio
 #EXTINF:-1,Media IslamNet
 https://s5.alhastream.com:8380/radio
 #EXTINF:-1,Medina FM
@@ -733,12 +731,10 @@ https://server.adyadigitalteknologi.com:8010/2/
 https://server.adyadigitalteknologi.com:8010/3
 #EXTINF:-1,Memora FM
 https://i.klikhost.com:9044/stream
+#EXTINF:-1,Menara FM
+https://c1.siar.us:10280/menarafmbali
 #EXTINF:-1, Mercury FM
 https://svara-stream.radioddns.net/surabaya_mercuryfm-aac
-#EXTINF:-1, Merdeka 106.7 FM
-https://azuracast.suzananet.com/listen/merdeka_fm/radio
-#EXTINF:-1,Merdeka FM
-https://azuracast.suzananet.com/listen/merdeka_fm/radio
 #EXTINF:-1,Metrum Radio
 https://ssg.streamingmurah.com:8400/;
 #EXTINF:-1, Metta Solo FM
@@ -811,14 +807,20 @@ https://wz.mari.co.id:1936/web_mostfm/mostfm/playlist.m3u8
 https://mediacp-sg1.arenastreaming.com/stream/kalimaya
 #EXTINF:-1,Motion Radio Manado
 https://stream.zeno.fm/8dq1zap87ehvv
-#EXTINF:-1,MS Tri FM Jakarta
-https://c2.siar.us/radio/8120/live
+#EXTINF:-1, Move Online Radio
+https://stream.algotech.co.id/8758/stream
+#EXTINF:-1, MS Tri FM Jakarta
+https://c2.siar.us/listen/mstrifm/live
 #EXTINF:-1,MTA FM
 http://mtamedia.net:1079/;
 #EXTINF:-1,Munston Radio Indonesia
 https://c1.alhastream.com:4240/radio
 #EXTINF:-1,Music City Digicast
 http://sci.streamingmurah.com:8003/stream
+#EXTINF:-1,My Radio BJB
+https://a3.alhastream.com:5038/radio
+#EXTINF:-1,N Radio
+https://s3.alhastream.com:3200/radio
 #EXTINF:-1,Nadapa Digital - PRO1 Dangdut
 https://ssg.streamingmurah.com:8116/stream/;
 #EXTINF:-1,Nadapa Digital - PRO2 Anak Muda
@@ -853,6 +855,8 @@ https://srv.laksilfmedia.net:8000/radio.mp3
 https://a8.alhastream.com:4110/radio
 #EXTINF:-1,NG Radio
 https://ssg.streamingmurah.com:8322/stream
+#EXTINF:-1,Nikoya FM
+https://a2.siar.us/listen/nikoyafm/live
 #EXTINF:-1,Ninetysix Radio
 https://c4.siar.us:8950/stream
 #EXTINF:-1,Ninetysix Radio Asia Pop 40
@@ -925,6 +929,8 @@ https://i.klikhost.com/8266/stream
 https://passfm-radio.wow.net.id/stream/
 #EXTINF:-1, Pasaman FM
 https://i.klikhost.com/8248/;
+#EXTINF:-1, Pass Fm Cilegon
+https://eradio.web.id/passfm
 #EXTINF:-1, Pass FM Katapang Bandung
 https://stream.zeno.fm/txefvhqnh48uv
 #EXTINF:-1,Passopati FM
@@ -945,10 +951,14 @@ https://ssi.streamingmurah.com:8052/stream
 https://live.radiopinguinfm.com:8350/;stream.mp3
 #EXTINF:-1, Piss Radio
 https://svara-stream.radioddns.net/ciamis_pissfm_stereo
+#EXTINF:-1,Play FM
+http://66.96.237.109:8000/
 #EXTINF:-1,Poliyama Top FM
 https://live4.rs3fm.com:8001/poliyama
 #EXTINF:-1, Pop FM
 https://i.klikhost.com/8272/stream
+#EXTINF:-1,PR FM
+https://sx.alhastream.com:8280/prfm
 #EXTINF:-1,Pradya Suara FM
 http://pu.klikhost.com:8012/stream
 #EXTINF:-1,Prambors FM
@@ -1003,8 +1013,8 @@ https://void.idserverhost.com:8024/stream
 https://sv5.alhastream.com:4410/radio
 #EXTINF:-1,Radio Al Ilmu Madura
 https://radioma.my.id/proxy/alilmumadura/stream/;
-#EXTINF:-1, Radio Al-Fatah Trangkil Temboro
-https://i.klikhost.com/8228/;
+#EXTINF:-1,Radio Al-Fatah Trangkil Temboro
+https://i.klikhost.com/8228/;stream.mp3
 #EXTINF:-1,Radio Al-Hikmah FM
 https://icecast.surau.tv/alhikmah
 #EXTINF:-1,Radio Al-Manshuroh Cilacap
@@ -1031,8 +1041,6 @@ https://b.alhastream.com:5109/autodj
 https://pu.klikhost.com/proxy/dasa/stream
 #EXTINF:-1, Radio Asa FM
 https://stream.zeno.fm/2x8c8cnq2zhvv
-#EXTINF:-1,Radio Aswaja FM
-https://a3.alhastream.com:5046/radio
 #EXTINF:-1,Radio At-Tauhid – Bandung
 https://radiosunnah.web.id/listen/at-tauhid/on-air
 #EXTINF:-1, Radio Azam FM
@@ -1115,14 +1123,14 @@ https://ssg.streamingmurah.com:8342/stream
 https://radioma.my.id/proxy/daarularqom/stream/;
 #EXTINF:-1, Radio Dahlia
 https://svara-stream.radioddns.net/bandung_dahliafm
+#EXTINF:-1,Radio Dakwah Syariah (RDS FM)
+https://audiostreamserver.indonesiastreaming.com/rdsfm
 #EXTINF:-1,Radio Dangdut 24 Jam
 https://a3.alhastream.com:1265/radiodangdut
 #EXTINF:-1, Radio Darul Hikam
 https://stream.zeno.fm/aqthwogyblxvv
 #EXTINF:-1,Radio Darussalam Musi Rawas
 https://s7.alhastream.com:8420/radio
-#EXTINF:-1,Radio dBs
-http://i.klikhost.net:8612/;stream.mp3
 #EXTINF:-1, Radio DC Four FM
 https://i.klikhost.com/8180/stream
 #EXTINF:-1,Radio DEI FM
@@ -1171,8 +1179,8 @@ https://stream.yaomi.blog/galuhfm
 https://stream.zeno.fm/5dfi6ftz7dwuv
 #EXTINF:-1,Radio Gaul FM
 http://27.50.19.173:9000/gaulfm
-#EXTINF:-1,RADIO GELORA
-https://stream.zeno.fm/xe4lluhteyltv
+#EXTINF:-1, RADIO GELORA
+https://stream.coolkas.com/listen/radiocmn/gelora
 #EXTINF:-1, RADIO GEMA ETNIK
 https://stream.zeno.fm/e13km7azly0vv
 #EXTINF:-1, Radio Gema Merdeka Bali
@@ -1271,6 +1279,8 @@ https://a3.alhastream.com/listen/station_54/radio
 https://ssg.streamingmurah.com:8254/;stream.mp3
 #EXTINF:-1, Radio Kayubura
 https://uk20freenew.listen2myradio.com/live.mp3?typeportmount=s1_15179_stream_503699099;
+#EXTINF:-1,Radio Kejora FM
+http://145.79.12.112:8000/kejorafm
 #EXTINF:-1, Radio Kelana Batam
 https://a3.alhastream.com/listen/station_81/radio
 #EXTINF:-1,Radio Kembang Sore
@@ -1447,6 +1457,8 @@ https://stream.zeno.fm/erxpenektlavv
 https://stream.zeno.fm/ylfnrg5acnuvv
 #EXTINF:-1, Radio Radupa FM
 https://stream1.bskmedia.net/listen/samarinda/radupafm
+#EXTINF:-1,Radio Rama Blitar
+http://i.klikhost.com:8846/;stream.mp3
 #EXTINF:-1, Radio Ranau Oku Selatan
 https://stream.zeno.fm/a9cuu7xkg5zuv
 #EXTINF:-1,Radio Rasil (Radio Silaturahim)
@@ -1465,8 +1477,10 @@ https://live.rhemaradio.com/;&type=mp3
 https://sx.crownmediacenter.my.id/listen/radio_rhema_surgawi/radio.aac
 #EXTINF:-1,Radio Rijal Wonogiri
 http://65.108.198.245:8198/stream/
-#EXTINF:-1,Radio Rodja
-https://live2.radiorodja.com/rodja.mp3
+#EXTINF:-1, Radio Robbani FM
+https://c2.siar.us/listen/robbani/live
+#EXTINF:-1, Radio Rodja
+https://cast5.asurahosting.com/proxy/dikman/stream
 #EXTINF:-1,Radio Rodja Bandung FM
 https://radioislamindonesia.com/rodja-bandung.mp3
 #EXTINF:-1, Radio Rodja Bogor
@@ -1569,8 +1583,8 @@ https://s7.alhastream.com/radio/8450/radio
 https://r2.siar.us:8700/suarakudus
 #EXTINF:-1,Radio Suara Kupang FM
 https://ssg.streamingmurah.com:8042/;
-#EXTINF:-1,Radio Suara Madiun
-https://play-93fm.madiunkota.go.id/source
+#EXTINF:-1, Radio Suara Madiun
+https://play-93fm.madiunkota.go.id/live
 #EXTINF:-1,Radio Suara Mahanaim
 https://ssg.streamingmurah.com:8418/stream
 #EXTINF:-1,Radio Suara Mesuji
@@ -1601,8 +1615,6 @@ https://i.klikhost.com/8000/wajarfm
 https://i.klikhost.com/8090/;stream
 #EXTINF:-1,Radio Sunnah Medan
 https://radioma.my.id/proxy/sunnahmedan/stream
-#EXTINF:-1,Radio Sushi FM
-https://stream2.jejestreaming.com:9200/stream
 #EXTINF:-1, Radio Swadesi Adhiloka
 https://stream.swadesifm.com/radio/8010/radio.mp3
 #EXTINF:-1, Radio Swadesi BANJ
@@ -1627,8 +1639,6 @@ https://i.klikhost.com/8822/;
 https://r5.siar.us:8711/stream
 #EXTINF:-1,Radio Swara Mappi
 https://sv5.alhastream.com:4170/radio
-#EXTINF:-1,Radio Swara Semarang
-https://server.radioimeldafm.co.id/listen/swarasemarang/swarasemarang
 #EXTINF:-1,RADIO SYALLOM FM TOBELO
 https://ssg.streamingmurah.com:8233/stream/;
 #EXTINF:-1,Radio Syifa
@@ -1661,8 +1671,6 @@ https://i.klikhost.com/thomsoncilacap/stream
 https://pu.klikhost.com/proxy/tidarsakti/stream
 #EXTINF:-1,Radio Trendakwah FM
 https://radio.mitradio.com/listen/9._trendakwah_fm/radio.mp3
-#EXTINF:-1,Radio Trirama FM
-http://i.klikhost.com:8706/;
 #EXTINF:-1,Radio Tubaba Qu
 https://sv5.alhastream.com:4430/radio
 #EXTINF:-1,Radio Tulungselapan FM 89.9
@@ -1675,6 +1683,8 @@ https://a3.alhastream.com:4410/radio
 https://a3.siar.us:8240/radio.mp3
 #EXTINF:-1,Radio Utari FM Cilacap
 https://s5.alhastream.com:8220/radio
+#EXTINF:-1,Radio Warna 104.2 FM
+https://a3.alhastream.com:5055/radio
 #EXTINF:-1, Radio Widyaswara Streaming Surabaya
 https://a1.siar.us/radio/8320/radio.mp3
 #EXTINF:-1,Radio Wisata FM
@@ -1687,6 +1697,8 @@ https://sv.rti.my.id:8010/radio.mp3
 https://icecast.radioqu.id/bogor
 #EXTINF:-1,RadioQu Kuningan
 https://live.radioqukuningan.com/;stream.mp3
+#EXTINF:-1, Rakom SR FM Malang
+https://pu.klikhost.com/proxy/srfm/stream
 #EXTINF:-1,Ralisa FM
 http://r5.siar.us:8100/;
 #EXTINF:-1, Rama FM Bandung
@@ -1695,10 +1707,6 @@ https://i.klikhost.com/8330/;
 https://i.klikhost.com/8334/;
 #EXTINF:-1,Rama FM Kampar
 https://sc.habeproradionetindonesia.id:8012/rama
-#EXTINF:-1,Rama FM Sukabumi
-https://i.klikhost.com/8338/;
-#EXTINF:-1,Ramapati Pasuruan
-https://icecast.pasuruankota.go.id/stream
 #EXTINF:-1,Rame FM
 https://a8.asurahosting.com:7160/radio.mp3
 #EXTINF:-1, RAS FM 95.5 Jakarta
@@ -1715,6 +1723,8 @@ https://svara-stream.radioddns.net/rasikafm_stereo
 https://e.siar.us/live/rasika.m3u8
 #EXTINF:-1,Rasika USA
 https://svara-stream.radioddns.net/rasikafm_stereo
+#EXTINF:-1, Rau FM 105.0
+https://svara-stream.radioddns.net/sidempuan_raufm
 #EXTINF:-1, RB Radio
 https://i.klikhost.com/8204/;radio.mp3
 #EXTINF:-1,RBJ FM
@@ -1793,6 +1803,8 @@ https://stream-node2.rri.co.id/streaming/40/9340/jazz.mp3
 https://stream-node2.rri.co.id/streaming/40/9340/memori.mp3
 #EXTINF:-1, RRI Pro 1
 https://stream-node1.rri.co.id/streaming/25/9025/rrijakartapro1.mp3
+#EXTINF:-1,RRI Pro 1 - Aceh Singkil
+https://stream-node1.rri.go.id/streaming/36/9136/rriacehsingkilpro1.mp3
 #EXTINF:-1,RRI Pro 1 - Ampana
 https://stream-node2.rri.go.id/streaming/37/9337/rriampanapro1.mp3
 #EXTINF:-1,RRI Pro 1 - Banda Aceh
@@ -1963,8 +1975,8 @@ https://stream-node2.rri.go.id/streaming/22/9322/rritualpro1.mp3
 https://stream-node1.rri.go.id/streaming/41/9141/rritubanpro1.mp3
 #EXTINF:-1,RRI Pro 1 Way Kanan
 https://stream-node2.rri.co.id/streaming/37/9237/rriwaykanapro1.mp3
-#EXTINF:-1,RRI Pro 2
-https://stream-node1.rri.go.id/streaming/25/9025/rrijakartapro2.mp3
+#EXTINF:-1, RRI Pro 2
+https://stream-node1.rri.co.id/streaming/25/9025/rrijakartapro2.mp3
 #EXTINF:-1,RRI Pro 2 - Atambua
 https://stream-node1.rri.co.id/streaming/25/9225/rriatambuapro2.mp3
 #EXTINF:-1,RRI Pro 2 - Banda Aceh
@@ -2149,8 +2161,6 @@ https://stream-node2.rri.co.id/streaming/13/9213/rrikupangpro4.mp3
 https://stream-node2.rri.co.id/streaming/12/9312/rripalangkarayapro4.mp3
 #EXTINF:-1,RRI Pro 4 Pekanbaru
 https://stream-node0.rri.go.id/streaming/12/9012/rripekanbarupro4.mp3
-#EXTINF:-1,RRI Pro 5 Makassar
-https://stream-node0.rri.go.id/streaming/22/9022/rrimakasarpro5.mp3
 #EXTINF:-1,RRI Pro2 Bandung
 https://stream-node0.rri.go.id/streaming/15/9015/rribandungpro2.mp3
 #EXTINF:-1, RRI Voice Of Indonesia
@@ -2217,6 +2227,8 @@ https://c4.siar.us/proxy/sheradio/stream
 https://svara-stream.radioddns.net/ichthusfm
 #EXTINF:-1,SiFM 101.3
 https://i.klikhost.com/8184/stream
+#EXTINF:-1,SIP FM
+https://a3.alhastream.com:1275/sipfm
 #EXTINF:-1, Sipirok FM
 https://stream.zeno.fm/tutac7c7k5zuv
 #EXTINF:-1,SIPP FM
@@ -2247,6 +2259,8 @@ https://stream1.bskmedia.net/listen/samarinda/smrradio
 https://i.klikhost.com/8692/stream
 #EXTINF:-1,Solopos FM
 https://live.solopos.com:8002/stream
+#EXTINF:-1,Songgolangit FM
+http://45.32.103.238:8092/stream
 #EXTINF:-1,Sonora FM
 https://sonora-radio.arenastreaming.com/8130/stream
 #EXTINF:-1, Sonora FM Jakarta
@@ -2319,14 +2333,14 @@ https://c5.siar.us/proxy/ssfm/stream
 https://a2.siar.us/listen/suarasoneta/radio.mp3
 #EXTINF:-1, SuaraSoneta Radio
 https://a2.siar.us/listen/suarasoneta/radio.mp3
+#EXTINF:-1, Sukses Radio
+https://pu.klikhost.com/proxy/suksesfm/stream
 #EXTINF:-1,Sun FM
 https://a1.siar.us/radio/8440/radio.mp3?1605496428
 #EXTINF:-1, Sun FM 103.5 Banjarmasin
 https://a1.siar.us/radio/8440/radio.mp3?1605496428
 #EXTINF:-1, Sunda Radio
 https://sundaradio.com/live/sundaradio
-#EXTINF:-1, Sushi Fm 99.1 Padang
-https://stream2.jejestreaming.com:9200/stream
 #EXTINF:-1,Suska FM
 https://a7.alhastream.com:4150/radioumj
 #EXTINF:-1,Suzana FM
@@ -2401,8 +2415,6 @@ https://wowza.dpr.go.id/golive/livestream/playlist.m3u8
 https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8
 #EXTINF:-1, UC Fikom Radio
 https://listen.radioking.com/radio/796141/stream/864586
-#EXTINF:-1,Unimma FM
-https://ssg.streamingmurah.com:8048/;
 #EXTINF:-1,Unisi FM
 https://studio1.indostreamers.com:8002/stream/1/
 #EXTINF:-1, UpRadio Semarang
@@ -2423,8 +2435,6 @@ http://vihope.i.streaming.id:8090/vihope
 http://b.alhastream.com:5115/radio
 #EXTINF:-1, VOA Indonesia
 https://voa-ingest.akamaized.net/hls/live/2035218/154_222L/playlist.m3u8
-#EXTINF:-1,Voice 103.7 FM
-https://voice.faisal.id/stream
 #EXTINF:-1,VOKS Radio Bali 102 FM
 https://a3.alhastream.com:4010/radio
 #EXTINF:-1,Voks Radio Bali 993 FM
