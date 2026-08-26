@@ -1021,7 +1021,7 @@ https://mettaswara.com:8700/mix
 #EXTINF:-1,Delta FM
 https://stream.rcs.revma.com/k02rmq48kxcwv
 #EXTINF:-1,RDI FM - JAKARTA
-http://202.147.199.99:8000/;
+https://proxy.rctiplus.com/?name=http://8.215.206.157:8004/;
 #EXTINF:-1,Mettaswara Love Song
 https://mettaswara.com:8700/love
 #EXTINF:-1,Mettaswara Nostalgia
@@ -1041,11 +1041,11 @@ https://radio.mitradio.com/listen/fajrifm/radio.mp3
 #EXTINF:-1,Radio Musik Indonesia
 https://stream.zeno.fm/vfckq3qrt5quv
 #EXTINF:-1,V Radio
-http://202.147.199.100:8000/;stream.nsv
+https://proxy.rctiplus.com/?name=http://8.215.206.157:8008/;
 #EXTINF:-1,Poliyama Top FM
 https://live4.rs3fm.com:8001/poliyama
 #EXTINF:-1,MNC Trijaya FM
-http://202.147.199.101:8000/;
+https://proxy.rctiplus.com/?name=http://8.215.206.157:8002/;
 #EXTINF:-1,Radio Al-Fatah Trangkil Temboro
 https://i.klikhost.com/8228/;stream.mp3
 #EXTINF:-1,Retjo Buntung FM
@@ -1191,7 +1191,7 @@ http://streaming.radiomediafm.com:8400/radio
 #EXTINF:-1,Megaswara Bogor
 https://server.adyadigitalteknologi.com:8010/stream/1/
 #EXTINF:-1,Global Radio Jakarta
-http://8.215.206.157:8006/stream
+https://proxy.rctiplus.com/?name=http://8.215.206.157:8006/;
 #EXTINF:-1,Gentara Campursari
 https://s1.gntr.net/listen/gentara_campursari/radio
 #EXTINF:-1,Desoe FM
