@@ -350,7 +350,7 @@ https://icecast.elshifaradio.com/stream.mp3
 #EXTINF:-1, Elthree Radio
 https://eu1.fastcast4u.com/proxy/elthree?mp=/1
 #EXTINF:-1, Endless For Beacon FM
-https://stream.zenolive.com/x1wrh2y4jj6uv
+https://stream.zeno.fm/kzizu3f1dlatv
 #EXTINF:-1, Endless For Beacon Throwback
 https://stream.zeno.fm/xxkokxngupuvv
 #EXTINF:-1, ESCO FM
@@ -533,8 +533,8 @@ https://c4.siar.us/proxy/istanafm/stream
 https://c4.siar.us/proxy/istanafm/stream
 #EXTINF:-1, Istara FM
 https://live.radioistara.com/listen/radioistara
-#EXTINF:-1, iSWARA Bandung
-https://stream.radiojar.com/u6ppe6hswk8uv
+#EXTINF:-1, iSwara Bandung
+https://stream.radiojar.com/u6ppe6hswk8uv?isw_live=1785805667659
 #EXTINF:-1, iSwara Banjarmasin
 https://stream.radiojar.com/qfqd2aw80k8uv?isw_live=1785805483317
 #EXTINF:-1, iSwara FM
@@ -840,7 +840,7 @@ https://svara-stream.radioddns.net/sukabumi_nbsfm
 #EXTINF:-1, Nests FM
 https://i.klikhost.com/8208/;stream.mp3
 #EXTINF:-1, NET Radio Indonesia
-https://a3.siar.us/listen/net/Radio?1749105836234
+https://a3.siar.us/listen/net/Radio
 #EXTINF:-1, Neta Radio Streaming Pertuni Kab Bandung
 https://srv.laksilfmedia.net:8000/radio.mp3
 #EXTINF:-1, NG Radio
@@ -860,7 +860,7 @@ https://stream.zeno.fm/4dtngnyxgrhvv
 #EXTINF:-1, Ninetysix Radio Lagu 2000an
 https://stream.zeno.fm/xzhzwrtbfphvv
 #EXTINF:-1, Ninetysix Radio Smooth Song
-https://stream.zeno.fm/3tzytm841xhvv
+https://stream.zeno.fm/1p7xwm841xhvv
 #EXTINF:-1, Norrm
 https://listen.norrm.com/default
 #EXTINF:-1, Nova Hits Radio Nusantara
@@ -1017,6 +1017,8 @@ https://c1.alhastream.com:8970/andikafm
 https://stream1.bskmedia.net/listen/jaringan_lampung/angkasabiru
 #EXTINF:-1, Radio Angkasa Biru 89.9 Fm - BSK Radio Network
 https://stream1.bskmedia.net/listen/jaringan_lampung/angkasabiru
+#EXTINF:-1, Radio Annajiyah
+https://radioma.my.id/proxy/annajiyahbatam/stream
 #EXTINF:-1, Radio API Injil
 https://rai.crownmediacenter.my.id/listen/radio_api_injil/radio.aac
 #EXTINF:-1, Radio Arief FM
@@ -1105,6 +1107,8 @@ https://cityguide911fm.com/radio/audio.mp3
 https://stream.coolkas.com/radio/8160/radiocmn
 #EXTINF:-1, Radio CWS FM
 https://ssg.streamingmurah.com:8342/stream
+#EXTINF:-1, Radio Daarul Arqom
+https://radioma.my.id/proxy/daarularqom/stream/;
 #EXTINF:-1, Radio Dahlia
 https://svara-stream.radioddns.net/bandung_dahliafm
 #EXTINF:-1, Radio Dakwah Syariah (RDS FM)
@@ -1165,6 +1169,8 @@ https://radio.mitradio.com/listen/fajrifm/radio.mp3
 https://stream.zeno.fm/7dhnnj7vvmwtv
 #EXTINF:-1, Radio Fress FM
 https://streaming.fressfm.com:11185/stream
+#EXTINF:-1, Radio Galeri Muhasabah
+https://radioma.my.id/proxy/galerimuhasabah2/stream/;
 #EXTINF:-1, Radio Gaul FM
 http://27.50.19.173:9000/gaulfm
 #EXTINF:-1, RADIO GELORA
@@ -1291,6 +1297,8 @@ http://202.65.114.229:9952/;
 https://radiomanggarai88.online/listen/rm88/radio.mp3
 #EXTINF:-1, Radio Manggarai FM
 https://radiomanggarai88.online/listen/rm88/radio.mp3
+#EXTINF:-1, Radio Manhajul Anbiya
+https://radioma.my.id/proxy/rma/stream
 #EXTINF:-1, Radio Manhajul Anbiya 2
 https://radioma.my.id/proxy/rma2/stream/;
 #EXTINF:-1, Radio Mara
@@ -1556,7 +1564,9 @@ https://void.idserverhost.com:8086/stream/;
 #EXTINF:-1, Radio Suara Wajar
 https://i.klikhost.com/8000/wajarfm
 #EXTINF:-1, Radio Sumber Kasih
-https://i.klikhost.com/8090/;
+https://i.klikhost.com/8090/;stream
+#EXTINF:-1, Radio Sunnah Medan
+https://radioma.my.id/proxy/sunnahmedan/stream
 #EXTINF:-1, Radio Sushi FM
 https://stream2.jejestreaming.com:9200/stream
 #EXTINF:-1, Radio Swadesi Adhiloka
@@ -2153,8 +2163,6 @@ https://i.klikhost.com/8114/stream
 https://a2.siar.us:8020/radio.mp3
 #EXTINF:-1, Seven Radio
 https://stream.zeno.fm/nv041ckkfg0uv
-#EXTINF:-1, Shawtuna 90.5 FM
-https://radio.metrouniv.ac.id/1/listen
 #EXTINF:-1, She Radio
 https://c4.siar.us/proxy/sheradio/stream
 #EXTINF:-1, Siaran Ichtus
@@ -2217,6 +2225,8 @@ https://i.klikhost.com/8712/stream
 https://radio.spirittoc.com:8060/spirit_online
 #EXTINF:-1, Srinadi 99,7 FM
 http://srinadifm.onlivestreaming.net:9970/srinadifm
+#EXTINF:-1, Sriwijaya Radio
+http://sriwijaya.onlivestreaming.net:9430/stream
 #EXTINF:-1, Star FM 105.5
 http://radio.dnetprovider.id:8000/StarFM
 #EXTINF:-1, Star FM Tegal
