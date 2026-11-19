@@ -1020,8 +1020,8 @@ https://streaming.classynetradio.com/listen/classy_netradio_indonesia/classyHD
 https://mettaswara.com:8700/mix
 #EXTINF:-1, Delta FM
 https://stream.rcs.revma.com/k02rmq48kxcwv
-#EXTINF:-1, Radio Dangdut Indonesia RDI FM - JAKARTA
-http://202.147.199.99:8000/;?type=http&nocache=626
+#EXTINF:-1, Radio Dangdut Indonesia RDI FM 97.1 FM Jakarta
+http://8.215.206.157:8004/stream?type=http&nocache=1742
 #EXTINF:-1, Mettaswara Love Song
 https://mettaswara.com:8700/love
 #EXTINF:-1, Mettaswara Nostalgia
